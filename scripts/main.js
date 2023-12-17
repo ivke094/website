@@ -22,7 +22,7 @@
     }
     ,
     n.r = function(t) {
-        "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(t, Symbol.toStringTag, {
+        "undefined"  != typeof Symbol && Symbol.toStringTag && Object.defineProperty(t, Symbol.toStringTag, {
             value: "Module"
         }),
         Object.defineProperty(t, "__esModule", {
