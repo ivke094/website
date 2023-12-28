@@ -1072,9 +1072,16 @@ hr {
         width: 97%;
         height: 85%;
         overflow: hidden;
+        margin-top: 20px;
+        padding-right: 22px;
     }
 }
 
+@media (max-width: 767.98px) {
+    .text-bio {
+        padding-right: 30px;
+    }
+}
 @media (max-width: 767.98px) {
     .img-fluid {
         width: 100%;
@@ -1101,14 +1108,53 @@ hr {
         object-fit: cover; 
         object-position: center 50%;       
     }
+
+}
+
+@media (min-width: 991.98px) {   
+    .ivan-logo{
+       padding-top: 30px;  
+
+    }
+}
+
+@media (min-width: 1900px) {   
+    .ivan-logo{
+       padding-top: 50px;       
+    }
 }
 
 @media (min-width: 991.98px) {
     .text-bio{
         margin-right: 74px;
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 991.98px) {
+    h3 {
+        font-size: 15px;
+        font-weight: 700;
+        margin-bottom: 1rem
+    }
+}
+
+@media (min-width: 1900px) {
+    .text-bio{
+        margin-right: 74px;
         font-size: 15px;
     }
 }
+
+@media (min-width: 1900px) {
+    h3 {
+        font-size: 21px;
+        font-weight: 700;
+        margin-bottom: 1rem
+    }
+}
+
+
 
 .container {
     width: 100%;
@@ -2070,6 +2116,7 @@ a.text-lightgrey:focus,a.text-lightgrey:hover {
     right: -590px;
     background-color: rgba(31,31,31,.9);
     overflow-x: hidden;
+    overflow-y: hidden;
     transition: .2s
 }
 
@@ -2092,7 +2139,8 @@ a.text-lightgrey:focus,a.text-lightgrey:hover {
 }
 
 .sidebox.active {
-    right: 0
+    right: 0;
+    overflow-y: auto;
 }
 
 .layout {
@@ -2205,20 +2253,20 @@ a.text-lightgrey:focus,a.text-lightgrey:hover {
 
 @media (max-width: 991.98px) {
     .nav-toggle {
-        right:50px!important
+        right:50px!important;
+        top: 40px;
     }
 }
 
 @media (min-width: 1200px) {
     .nav-toggle {
-        top:74px;
+        top:60px;
        
     }
 }
 
 @media (max-width: 767.98px) {
     .nav-toggle {
-        top:15px;
         margin-right: 10px;
     }
 }
@@ -2279,14 +2327,11 @@ body {
     background-color: #121212;
     color: #fff;
     z-index: -2;
-    position: relative
+    position: relative;
+    overflow-y: auto;
 }
 
-h3 {
-    font-size: 21px;
-    font-weight: 700;
-    margin-bottom: 1rem
-}
+
 
 a {
     transition: color .2s ease
@@ -2492,8 +2537,8 @@ hr {
     }
 }
 
-.debie-logo {
-    width: 25px
+.ivan-logo {
+    width: 55px
 }
 .job-title{
     color: #5c5c5c;
