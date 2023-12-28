@@ -2266,9 +2266,7 @@ a.text-lightgrey:focus,a.text-lightgrey:hover {
 }
 
 @media (max-width: 767.98px) {
-    .nav-toggle {
-        margin-right: 10px;
-    }
+    
 }
 
 .nav-toggle:hover {
