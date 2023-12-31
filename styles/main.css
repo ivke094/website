@@ -2578,6 +2578,17 @@ hr {
     margin-left: auto;
 }
 
+.slider-8{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    animation: 40s sliding-8 linear infinite;
+}
+
 .slider-10{
     position: relative;
     width: 100%;
@@ -2609,6 +2620,60 @@ hr {
     height: 100%;
     object-fit: cover; 
     object-position: center 50%;
+}
+
+@keyframes sliding-8 {
+    0% {
+        transform: translateX(0%);
+    }
+    6% {
+        transform: translateX(0%);
+    }
+    12.5% {
+        transform: translateX(-100%);
+    }
+    18% {
+        transform: translateX(-100%);
+    }
+    25% {
+        transform: translateX(-200%);
+    }
+    31% {
+        transform: translateX(-200%);
+    }
+    37.5% {
+        transform: translateX(-300%);
+    }
+    42% {
+        transform: translateX(-300%);
+    }
+    50% {
+        transform: translateX(-400%);
+    }
+    56% {
+        transform: translateX(-400%);
+    }
+    62.5% {
+        transform: translateX(-500%);
+    }
+    68% {
+        transform: translateX(-500%);
+    }
+    75% {
+        transform: translateX(-600%);
+    }
+    73% {
+        transform: translateX(-600%);
+    }
+    87.5% {
+        transform: translateX(-700%);
+    }
+    93% {
+        transform: translateX(-700%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
 }
 
 
