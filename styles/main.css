@@ -2189,25 +2189,27 @@ a.text-lightgrey:focus,a.text-lightgrey:hover {
 }
 
 .navbar .navbar-brand {
-    font-size: 22px;
     letter-spacing: 2px;
-    font-weight: 300;
-    font-family: F37 Ginger
-}
-
-.navbar-brand-different-font {
-    font-size: 22px;
-    letter-spacing: 2px;
-    font-weight: 400;
+    font-weight: 700;
     font-family: Montserrat
 }
+
+
 @media (max-width: 767.98px) {
     .navbar .navbar-brand {
-        font-size:1.1rem
+        font-size:0.9rem;
+    
+        
     }
-    .navbar .navbar-brand-different-font{
-        font-size:1rem
+   
+}
+
+@media (max-width: 767.98px) {
+    .job-title {
+        font-size:0.7rem;
+    
     }
+   
 }
 
 .letter-space {
@@ -2321,7 +2323,7 @@ html {
 }
 
 body {
-    font-family: F37 Ginger;
+    font-family: Montserrat;
     height: 100vh;
     /* background-color: #0F141F; */
     background-color: #121212;
@@ -2541,10 +2543,22 @@ hr {
     width: 55px
 }
 .job-title{
-    color: #5c5c5c;
+    color: #777;
+    font-weight: 500;
+    font-family: Montserrat;
+    font-style: normal;
 }
 .movie-title{
     color: #A58F74;
+    font-weight: 700;
+    font-family: Montserrat;
+    font-style: normal;
+}
+
+.movie-cast{
+    font-weight: 500;
+    font-family: Montserrat;
+    font-style: normal; 
 }
 
 .media-description {
@@ -2719,11 +2733,11 @@ hr {
 
 @media (min-width: 1800px) {
     .slider-title{
-        font-size: 25px; 
+        font-size: 1.25rem; 
         display: flex;
         letter-spacing: 2px;
          font-weight: 500; 
-         font-family: F37 Ginger; 
+         font-family: Montserrat; 
          color: #A58F74;
          position: relative;
     }
@@ -2739,6 +2753,8 @@ hr {
         position: relative;
         width: calc(100% - 310px);
         margin-right: auto;
+        font-weight: 300;
+        font-size: 0.9rem; 
     }
 }
 
@@ -2746,11 +2762,11 @@ hr {
 @media (min-width: 1800px) {
     .slider-watch{
         white-space: nowrap;
-        font-size: 15px;
+        font-weight: 500;
         display: flex;
         position: relative;
         padding-right: 100px;
-       
+        font-size: 1rem; 
 
     }
 }
@@ -2850,11 +2866,11 @@ hr {
 
 @media (min-width: 1200px) and (max-width: 1799px) {
     .slider-title{
-        font-size: 25px; 
         display: flex;
         letter-spacing: 2px;
          font-weight: 500; 
-         font-family: F37 Ginger; 
+         font-size: 1.25rem;
+         font-family: Montserrat; 
          color: #A58F74;
          position: relative;
     }
@@ -2870,6 +2886,8 @@ hr {
         position: relative;
         width: calc(100% - 150px);
         margin-right: auto;
+        font-weight: 300;
+        font-size: 0.9rem;
     }
 }
 
@@ -2877,11 +2895,11 @@ hr {
 @media (min-width: 1200px) and (max-width: 1799px) {
     .slider-watch{
         white-space: nowrap;
-        font-size: 15px;
         display: flex;
         position: relative;
         padding-right: 100px;
-       
+        font-weight: 500;
+        font-size: 1rem;
 
     }
 }
@@ -2993,11 +3011,11 @@ hr {
 
 @media (max-width: 767px) {
     .slider-title{
-        font-size: 1.1rem; 
+        font-size: 0.85rem; 
         display: flex;
         letter-spacing: 2px;
-         font-weight: 100; 
-         font-family: F37 Ginger; 
+         font-weight: 600; 
+         font-family: Montserrat; 
          color: #A58F74;
          position: relative;
     }
@@ -3012,6 +3030,7 @@ hr {
         position: relative;
         width: calc(100% - 50px);
         margin-right: auto;
+        font-weight: 300;
         font-size: 0.75rem;
     }
 }
@@ -3024,7 +3043,7 @@ hr {
         display: flex;
         position: relative;
         padding-right: 100px;
-       
+        font-weight: 500;
 
     }
 }
