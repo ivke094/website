@@ -2944,7 +2944,7 @@ hr {
         text-align: justify;
         display: flex;
         position: relative;
-        width: calc(100% - 74px);
+        width: calc(100% - 50px);
         margin-right: auto;
         font-size: 0.75rem;
     }
