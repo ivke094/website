@@ -1095,6 +1095,7 @@ hr {
     .img-container {
         height: 200px; 
         width: 380px;
+        margin-top:30px;
         overflow: hidden;
        
 
@@ -1113,7 +1114,8 @@ hr {
 
 @media (min-width: 991.98px) {   
     .ivan-logo{
-       padding-top: 30px;  
+       padding-top: 35px;  
+       margin-right: 95px;
 
     }
 }
@@ -1126,8 +1128,8 @@ hr {
 
 @media (min-width: 991.98px) {
     .text-bio{
-        margin-right: 74px;
-        font-size: 12px;
+        margin-right: 91px;
+        font-size: 11px;
     }
 }
 
@@ -2116,7 +2118,7 @@ a.text-lightgrey:focus,a.text-lightgrey:hover {
     z-index: 99993;
     bottom: 0;
     right: -590px;
-    background-color: rgba(31,31,31,.9);
+    background-color: rgba(31,31,31,0.95);
     overflow-x: hidden;
     overflow-y: hidden;
     transition: .2s
@@ -2543,7 +2545,7 @@ hr {
     width: 55px
 }
 .job-title{
-    color: #777;
+    color: #5c5c5c;
     font-weight: 500;
     font-family: Montserrat;
     font-style: normal;
