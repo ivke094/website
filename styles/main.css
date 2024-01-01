@@ -2142,9 +2142,17 @@ a.text-lightgrey:focus,a.text-lightgrey:hover {
     }
 }
 
+
+
 .sidebox.active {
     right: 0;
     overflow-y: auto;
+}
+
+@media (min-width: 1200px) {   
+    .sidebox.active{
+        overflow-y: hidden;
+    }
 }
 
 .layout {
@@ -2334,8 +2342,6 @@ body {
     position: relative;
     overflow-y: auto;
 }
-
-
 
 a {
     transition: color .2s ease
