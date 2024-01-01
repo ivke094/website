@@ -2578,6 +2578,17 @@ hr {
     margin-left: auto;
 }
 
+.slider-7 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    animation: 35s sliding-7 linear infinite;
+}
+
 .slider-8{
     position: relative;
     width: 100%;
@@ -2620,6 +2631,33 @@ hr {
     height: 100%;
     object-fit: cover; 
     object-position: center 50%;
+}
+
+@keyframes sliding-7 {
+    0% {
+        transform: translateX(0%);
+    }
+    14.29% {
+        transform: translateX(0%);
+    }
+    28.57% {
+        transform: translateX(-100%);
+    }
+    42.86% {
+        transform: translateX(-200%);
+    }
+    57.14% {
+        transform: translateX(-300%);
+    }
+    71.43% {
+        transform: translateX(-400%);
+    }
+    85.71% {
+        transform: translateX(-500%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
 }
 
 @keyframes sliding-8 {
@@ -2910,7 +2948,7 @@ hr {
     .slider-desc{
         width: 40%;
         height: 100%;
-        padding-left: 100px;
+        padding-left: 88px;
         padding-top:15vh;
         display: flex;
         align-items: flex-end;
@@ -2949,7 +2987,7 @@ hr {
         text-align: justify;
         display: flex;
         position: relative;
-        width: calc(100% - 150px);
+        width: calc(100% - 155px);
         margin-right: auto;
         font-weight: 300;
         font-size: 0.9rem;
@@ -2988,13 +3026,13 @@ hr {
 
 @media (min-width: 1200px) and (max-width: 1799px) {
     .slider-logo-lightframers{
-       width: 30%;
+       width: 29%;
     }
 }
 
 @media (min-width: 1200px) and (max-width: 1799px) {
     .slider-logo-escac{
-       width: 23%;
+       width: 22%;
     }
 }
 

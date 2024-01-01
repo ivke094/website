@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <base href="/">
-    <title>Compañeros de Piso</title>
+    <title>Don't go</title>
     <meta name="X-UA-Compatible" content="IE&#x3D;edge">
     <meta name="viewport" content="width&#x3D;device-width,&#x20;initial-scale&#x3D;1.0">
     <meta property="og&#x3A;type" content="website">
@@ -34,12 +34,12 @@
     <div class="row">
         <div class="slider-desc">
             <div class="slider-desc-content"> 
-                <span class="slider-title">Compañeros de Piso</span>
+                <span class="slider-title">Don't go</span>
                 <p class="slider-text">
-                    A short story about two flatmates who recently moved in and started living together.                
+                    When a young man wants to leave, his one-night-stand tries to convince him to stay.                
                 </p>
                 <br>
-                <span class ="slider-watch"><a  target="_blank" href="https://www.youtube.com/watch?v=ZGkSQHTZ2Is" class="text-lightgrey">WATCH HERE</a></span>
+                <span class ="slider-watch"><a  target="_blank" href="https://www.youtube.com/watch?v=TzDKEsEyx7c" class="text-lightgrey">WATCH HERE</a></span>
                 <br>
                 <div class="slider-logos">
                     <img  class="slider-logo slider-logo-escac" src="../images/logos 5c5c5c/escac.png" alt="ESCAC" />
@@ -48,34 +48,33 @@
                    
         </div>      
         <div class="slider-content">
-            <section class="slider_container">
-                <section class="slider-8">
+            <section class="slider_container">            
+                <section class="slider-7">
                     <div class="slide">
-                        <img src="../images/companeros_de_piso/1.jpg" alt="">
+                        <img src="../images/dont_go/1.jpg" alt="">
                     </div>
                     <div class="slide">
-                        <img src="../images/companeros_de_piso/2.jpg" alt="">
+                        <img src="../images/dont_go/2.png" alt="">
                     </div>
                     <div class="slide">
-                        <img src="../images/companeros_de_piso/3.jpg" alt="">
+                        <img src="../images/dont_go/3.png" alt="">
                     </div>
                     <div class="slide">
-                        <img src="../images/companeros_de_piso/4.jpg" alt="">
+                        <img src="../images/dont_go/4.png" alt="">
                     </div>
                     <div class="slide">
-                        <img src="../images/companeros_de_piso/5.jpg" alt="">
+                        <img src="../images/dont_go/5.png" alt="">
                     </div>
                     <div class="slide">
-                        <img src="../images/companeros_de_piso/6.jpg" alt="">
+                        <img src="../images/dont_go/6.png" alt="">
                     </div>
                     <div class="slide">
-                        <img src="../images/companeros_de_piso/7.jpg" alt="">
-                    </div>
-                    <div class="slide">
-                        <img src="../images/companeros_de_piso/8.jpg" alt="">
+                        <img src="../images/dont_go/7.png" alt="">
                     </div>
                 </section>
             </section>
+           <!--  <button onclick="$('.slider').slick('slickPrev')">Previous</button>
+            <button onclick="$('.slider').slick('slickNext')">Next</button> -->
         </div>
     </div>
     
@@ -134,5 +133,21 @@
     <div class="nav-toggle">
         <div class="nav-toggle-bar"></div>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../scripts/slick.min.js"></script> 
+    <script>
+        $(document).ready(function(){
+          $('.slider-3').slick({
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            speed: 1000,
+            variableWidth: true
+          });
+        });
+      </script>
 </body>
 </html>
