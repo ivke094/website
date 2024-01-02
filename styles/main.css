@@ -1070,7 +1070,7 @@ hr {
 @media (max-width: 767.98px) {
     .img-container {
         width: 90%;
-        height: 70%;
+        height: 80%;
         overflow: hidden;
         margin-top: 50px;
         padding-right: 30px;
@@ -1078,8 +1078,17 @@ hr {
 }
 
 @media (max-width: 767.98px) {
+    .col-img-content {
+       max-height: 200px;
+       max-width: 400px;
+    }
+}
+
+
+
+@media (max-width: 767.98px) {
     .text-bio {
-        padding-right: 60px;
+        padding-right: 65px;
     }
 }
 @media (max-width: 767.98px) {
@@ -2925,6 +2934,44 @@ hr {
     }
 }
 
+
+@media (min-width: 1800px) {
+    .slider-logo-tynegate{
+       width: 24%;
+    }
+}
+
+@media (min-width: 1800px) {
+    .slider-logo-kingston{
+       width: 17%;
+    }
+}
+
+@media (min-width: 1800px) {
+    .slider-logo-barbican{
+       width: 18%;
+    }
+}
+
+@media (min-width: 1800px) {
+    .slider-logo-dffb{
+       width: 22%;
+    }
+}
+
+@media (min-width: 1800px) {
+    .slider-logo-arte{
+       width: 17%;
+    }
+}
+
+@media (min-width: 1800px) {
+    .slider-logo-swr{
+       width: 16%;
+    }
+}
+
+
 @media (min-width: 1800px) {
     .slider-logo-lightframers{
        width: 22%;
@@ -3055,6 +3102,43 @@ hr {
         height: 100%;
         object-fit: cover; 
         object-position: center 50%; 
+    }
+}
+
+
+@media (min-width: 1200px) and (max-width: 1799px) {
+    .slider-logo-tynegate{
+       width: 24%;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1799px) {
+    .slider-logo-kingston{
+       width: 18%;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1799px) {
+    .slider-logo-barbican{
+       width: 19%;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1799px) {
+    .slider-logo-dffb{
+       width: 23%;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1799px) {
+    .slider-logo-arte{
+       width: 18%;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1799px) {
+    .slider-logo-swr{
+       width: 18%;
     }
 }
 
@@ -3198,6 +3282,46 @@ hr {
         height: 100%;
         object-fit: cover; 
         object-position: center 50%; 
+    }
+}
+
+
+@media (max-width: 767px) {
+    .slider-logo-tynegate{
+        width: 30%;
+        padding-top: 15px;
+    }
+}
+
+@media (max-width: 767px) {
+    .slider-logo-kingston{
+       width: 21%;
+    }
+}
+
+@media (max-width: 767px) {
+    .slider-logo-barbican{
+       width: 22%;
+       padding-top: 10px;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .slider-logo-dffb{
+       width: 30%;
+    }
+}
+
+@media (max-width: 767px) {
+    .slider-logo-arte{
+       width: 24%;
+    }
+}
+
+@media (max-width: 767px) {
+    .slider-logo-swr{
+       width: 22%;
     }
 }
 
