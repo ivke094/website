@@ -1069,17 +1069,17 @@ hr {
 
 @media (max-width: 767.98px) {
     .img-container {
-        width: 97%;
-        height: 85%;
+        width: 90%;
+        height: 70%;
         overflow: hidden;
-        margin-top: 20px;
-        padding-right: 22px;
+        margin-top: 50px;
+        padding-right: 30px;
     }
 }
 
 @media (max-width: 767.98px) {
     .text-bio {
-        padding-right: 30px;
+        padding-right: 60px;
     }
 }
 @media (max-width: 767.98px) {
@@ -1088,6 +1088,12 @@ hr {
         height: 100%;
         object-fit: cover; 
         object-position: center 50%;       
+    }
+}
+
+@media (max-width: 767.98px) {
+    .ivan-logo {
+        width: 40px;       
     }
 }
 
@@ -1120,12 +1126,6 @@ hr {
     }
 }
 
-@media (min-width: 1900px) {   
-    .ivan-logo{
-       padding-top: 50px;       
-    }
-}
-
 @media (min-width: 991.98px) {
     .text-bio{
         margin-right: 92px;
@@ -1141,18 +1141,44 @@ hr {
     }
 }
 
-@media (min-width: 1900px) {
+@media (max-width: 767.98px) {
+    h3 {
+        font-size: 0.9rem;
+        font-weight: 700;
+        margin-bottom: 1rem
+    }
+}
+
+
+@media (min-width: 1800px) {   
+    .img-container {
+        height: 200px; 
+        width: 380px;
+        margin-top:65px;
+        overflow: hidden;
+       
+
+    }
+}
+
+@media (min-width: 1800px) {   
+    .ivan-logo{
+       padding-top: 35px;       
+    }
+}
+
+@media (min-width: 1800px) {
     .text-bio{
-        margin-right: 74px;
-        font-size: 15px;
+        margin-right: 90px;
+        font-size: 13px;
     }
 }
 
 
 
-@media (min-width: 1900px) {
+@media (min-width: 1800px) {
     h3 {
-        font-size: 21px;
+        font-size: 17px;
         font-weight: 700;
         margin-bottom: 1rem
     }
@@ -2216,7 +2242,7 @@ a.text-lightgrey:focus,a.text-lightgrey:hover {
 
 @media (max-width: 767.98px) {
     .job-title {
-        font-size:0.9rem;
+        font-size:0.7rem;
     
     }
    
