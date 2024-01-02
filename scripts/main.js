@@ -12071,6 +12071,10 @@
                     this.nav.classList.toggle("expanded"),
                     console.log("test"),
                     t(".sidebox").toggleClass("active")
+
+                    var isActive = t(".sidebox").hasClass("active");
+                    const isSmallScreen = window.innerWidth <= 768;
+                    document.body.style.overflowY = isSmallScreen && isActive ? 'hidden' : isSmallScreen ? 'auto' : 'hidden';
                 }
             }.initialize()
         }
