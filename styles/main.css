@@ -2300,12 +2300,26 @@ a.text-lightgrey:focus,a.text-lightgrey:hover {
     z-index: 99999
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 767.98px) {
     .nav-toggle {
         right:50px!important;
         top: 40px;
     }
 }
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .nav-toggle {
+        right:120px!important;
+        top:68px;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    .nav-toggle {
+        right:120px!important;
+        top:48px;
+    }
+}
+
 
 @media (min-width: 1200px) {
     .nav-toggle {
@@ -2314,9 +2328,7 @@ a.text-lightgrey:focus,a.text-lightgrey:hover {
     }
 }
 
-@media (max-width: 767.98px) {
-    
-}
+
 
 .nav-toggle:hover {
     opacity: .8
@@ -2480,8 +2492,6 @@ hr {
     .horizontal-wrapper .horizontal-slide {
         position:relative;
         width: 100%;
-        padding-right: 15px;
-        padding-left: 15px;
         flex: 0 0 50%;
         max-width: 50%;
         opacity: 1!important;
@@ -2495,7 +2505,7 @@ hr {
 
 @media (max-width: 1199.98px) {
     .horizontal-wrapper .horizontal-slide img {
-        width:110%
+        width:100%
     }
 }
 
@@ -2511,50 +2521,6 @@ hr {
     opacity: .9
 }
 
-.info-link:hover .info-button:before {
-    opacity: 1
-}
-
-@media (max-width: 1199.98px) {
-
-    /* .info-link .info-button:before {
-        opacity:1
-    } */
-
-}
-
-@media only screen and (max-width: 767.98px) {
-    .info-button {
-        width: 20px !important; /* Adjust the width for smaller screens */
-        height: 10px !important; /* Adjust the height for smaller screens */
-    }
-}
-
-.info-button {
-    position: absolute;
-    width: 90px;
-    height: 60px;
-    z-index: 1;
-    opacity: .3;
-    border-radius: 6px
-}
-
-.info-button:before {
-    content: url(./files/view-more-medium.png);
-    position: absolute;
-    opacity: 0;
-    transition: opacity .5s ease-in-out
-}
-
-.info-button,.info-button:before {
-    top: 50%;
-    left: 50%;
-    transform: translate3d(-50%,-50%,0)
-}
-
-.info-button:hover:before {
-    opacity: 0.2; /* Set opacity to 50% on hover */
-}
 
 .fancybox-button {
     color: #fff!important
@@ -2563,6 +2529,92 @@ hr {
 .scrollbar-track-y {
     display: none!important
 }
+
+@media (min-width: 1800px) {
+    .info-button {
+        font-size: 60px;
+        opacity:0;
+    }
+    .horizontal-slide-photo:hover .info-button {
+        opacity: 0.3
+    }
+    
+    .horizontal-slide-photo .info-button {
+        transition: opacity .5s ease-out;
+        -moz-transition: opacity .5s ease-out;
+        -webkit-transition: opacity .5s ease-out;
+        -o-transition: opacity .5s ease-out
+    }
+}
+@media (min-width: 1200px) and (max-width: 1799px) {
+    .info-button {
+        font-size: 50px;
+        opacity:0;
+    }
+    .horizontal-slide-photo:hover .info-button {
+        opacity: 0.3
+    }
+    
+    .horizontal-slide-photo .info-button {
+        transition: opacity .5s ease-out;
+        -moz-transition: opacity .5s ease-out;
+        -webkit-transition: opacity .5s ease-out;
+        -o-transition: opacity .5s ease-out
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .info-button {
+        font-size: 60px;
+        opacity:0;
+        transition: opacity 0.3s ease-out;
+        -moz-transition: opacity .3s ease-out;
+        -webkit-transition: opacity .3s ease-out;
+        -o-transition: opacity .3s ease-out
+    }
+    .info-button.scrolled {
+        opacity: 0.3;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .info-button {
+        font-size: 50px;
+        opacity:0;
+        transition: opacity 0.3s ease-out;
+        -moz-transition: opacity .3s ease-out;
+        -webkit-transition: opacity .3s ease-out;
+        -o-transition: opacity .3s ease-out
+    }
+    .info-button.scrolled {
+        opacity: 0.3;
+    }
+}
+@media (max-width: 767px) {
+    .info-button {
+        font-size: 35px;
+        opacity:0;
+        transition: opacity 0.3s ease-out;
+        -moz-transition: opacity .3s ease-out;
+        -webkit-transition: opacity .3s ease-out;
+        -o-transition: opacity .3s ease-out
+    }
+    .info-button.scrolled {
+        opacity: 0.3;
+    }
+    
+}
+
+.info-button {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%,-50%,0);   
+    color: whitesmoke;
+}
+
+
+
 
 .horizontal-slide-photo:hover .show-hover {
     display: inline-block;

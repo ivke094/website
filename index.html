@@ -12,10 +12,10 @@
     <meta property="og&#x3A;title" content="Films">
     <meta property="og&#x3A;description" content="Films">
     <link rel="stylesheet" href="./styles/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" crossorigin="anonymous">
-    <link rel="icon" href="./images/logo.png">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous">
+    <link rel="icon" href="./images/logo.png">   
     <script src="./scripts/main.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 </head>
 <body>
     <nav id="navbar" class="navbar navbar-dark fixed-top">
@@ -40,8 +40,9 @@
                 <a class="info-link" href="./films/irreplaceable.html">
                     <img src="./images/irreplacable/10.jpg" alt="IRREPLACEABLE">
                    
-                    <div class="info-button">
-                    </div>
+                    <span class="info-button">
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </span>
                 </a>
                 <div class="layout-left mt-3 max-width">
                     <div class="row no-gutters">
@@ -64,8 +65,9 @@
                 <a class="info-link"  href="./films/laburbujadelbebe.html">
                     <img src="./images/la_burbuja_del_bebe/1.jpg" alt="La Burbuja del Bebé">
                    
-                    <div class="info-button">
-                    </div>
+                    <span class="info-button">
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </span>
                 </a>
                 <div class="layout-left mt-3 max-width">
                     <div class="row no-gutters">
@@ -88,8 +90,9 @@
                 <a class="info-link" href="./films/ark.html">
                     <img src="./images/ARK/11.jpg" alt="Ark">
                    
-                    <div class="info-button">
-                    </div>
+                    <span class="info-button">
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </span>
                 </a>
                 <div class="layout-left mt-3 max-width">
                     <div class="row no-gutters">
@@ -113,8 +116,9 @@
                 <a class="info-link" href="./films/stephenstale.html">
                     <img src="./images/stephens_tale/4.jpg" alt="Stephen's Tale">
                    
-                    <div class="info-button">
-                    </div>
+                    <span class="info-button">
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </span>
                 </a>
                 <div class="layout-left mt-3 max-width">
                     <div class="row no-gutters">
@@ -138,8 +142,9 @@
                 <a class="info-link" href="./films/ahazardousjoy.html">
                     <img src="./images/a_hazardous_joy/5.jpg" alt="A Hazardous Joy">
                    
-                    <div class="info-button">
-                    </div>
+                    <span class="info-button">
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </span>
                 </a>
                 <div class="layout-left mt-3 max-width">
                     <div class="row no-gutters">
@@ -162,8 +167,9 @@
                 <a class="info-link" href="./films/companerosdepiso.html">
                     <img src="./images/companeros_de_piso/3.jpg" alt="Compañeros de Piso">
                    
-                    <div class="info-button">
-                    </div>
+                    <span class="info-button">
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </span>
                 </a>
                 <div class="layout-left mt-3 max-width">
                     <div class="row no-gutters">
@@ -187,8 +193,9 @@
                 <a class="info-link" href="./films/dontgo.html">
                     <img src="./images/dont_go/5.jpg" alt="Don't Go">
                    
-                    <div class="info-button">
-                    </div>
+                    <span class="info-button">
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </span>
                 </a>
                 <div class="layout-left mt-3 max-width">
                     <div class="row no-gutters">
@@ -210,8 +217,9 @@
                 <a class="info-link" href="./films/ordinarypeople.html">
                     <img src="./images/ordinary_people/6.jpg" alt="Ordinary People">
                    
-                    <div class="info-button">
-                    </div>
+                    <span class="info-button">
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </span>
                 </a>
                 <div class="layout-left mt-3 max-width">
                     <div class="row no-gutters">
@@ -234,8 +242,9 @@
                 <a class="info-link" href="./films/eineinfachesereighnis.html">
                     <img src="./images/ein_einfaches_ereignis/4.jpg" alt="Ein Einfaches Ereignis">
                    
-                    <div class="info-button">
-                    </div>
+                    <span class="info-button">
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </span>
                 </a>
                 <div class="layout-left mt-3 max-width">
                     <div class="row no-gutters">
@@ -258,8 +267,9 @@
                 <a class="info-link" href="./films/teahouse.html">
                     <img src="./images/ArchDoc/5.jpg" alt="Tea House - Terunobu Fujimori | Kingston University & The Barbican">
                    
-                    <div class="info-button">
-                    </div>
+                    <span class="info-button">
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </span>
                 </a>
                 <div class="layout-left mt-3 max-width">
                     <div class="row no-gutters">
@@ -332,5 +342,30 @@
     <div class="nav-toggle">
         <div class="nav-toggle-bar"></div>
     </div>
+  <script>
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                var windowWidth = $(window).width();
+                var windowHeight = $(window).height();
+    
+                if (windowWidth <= 1024) {
+                    $('.horizontal-slide-photo').each(function () {
+                        var imageTop = $(this).offset().top;
+                        var imageHeight = $(this).outerHeight();
+                        var middlePosition = window.scrollY + windowHeight / 2;
+    
+                        if (middlePosition >= imageTop && middlePosition <= imageTop + imageHeight) {
+                            $(this).find('.info-button').addClass('scrolled');
+                        } else {
+                            $(this).find('.info-button').removeClass('scrolled');
+                        }
+                    });
+                } else {
+                    $('.info-button').removeClass('scrolled');
+                }
+            });
+        });
+    </script> 
 </body>
 </html>
+
