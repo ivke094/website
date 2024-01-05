@@ -36,7 +36,7 @@
     <div id="horizontal-wrapper-index" class="horizontal-wrapper">
         <div id="horizontal-container" class="horizontal-container">
 
-            <div class="horizontal-slide horizontal-slide-photo">
+            <div class="horizontal-slide horizontal-slide-photo" data-slide-index="1" onclick="handleSlideClick(1)">
                 <a class="info-link" href="./films/irreplaceable.html">
                     <img src="./images/irreplacable/10.jpg" alt="IRREPLACEABLE">
                    
@@ -61,7 +61,7 @@
                     </div>
                 </div>
             </div>
-            <div class="horizontal-slide horizontal-slide-photo">
+            <div class="horizontal-slide horizontal-slide-photo" data-slide-index="2" onclick="handleSlideClick(2)">
                 <a class="info-link"  href="./films/laburbujadelbebe.html">
                     <img src="./images/la_burbuja_del_bebe/1.jpg" alt="La Burbuja del Bebé">
                    
@@ -86,7 +86,7 @@
                     </div>
                 </div>
             </div>  
-            <div class="horizontal-slide horizontal-slide-photo">
+            <div class="horizontal-slide horizontal-slide-photo" data-slide-index="3" onclick="handleSlideClick(3)">
                 <a class="info-link" href="./films/ark.html">
                     <img src="./images/ARK/11.jpg" alt="Ark">
                    
@@ -112,7 +112,7 @@
                 </div>
                 
             </div>  
-            <div class="horizontal-slide horizontal-slide-photo">
+            <div class="horizontal-slide horizontal-slide-photo" data-slide-index="4" onclick="handleSlideClick(4)">
                 <a class="info-link" href="./films/stephenstale.html">
                     <img src="./images/stephens_tale/4.jpg" alt="Stephen's Tale">
                    
@@ -138,7 +138,7 @@
                 </div>
                 
             </div>        
-            <div class="horizontal-slide horizontal-slide-photo">
+            <div class="horizontal-slide horizontal-slide-photo" data-slide-index="5" onclick="handleSlideClick(5)">
                 <a class="info-link" href="./films/ahazardousjoy.html">
                     <img src="./images/a_hazardous_joy/5.jpg" alt="A Hazardous Joy">
                    
@@ -163,7 +163,7 @@
                     </div>
                 </div>
             </div>
-            <div class="horizontal-slide horizontal-slide-photo">
+            <div class="horizontal-slide horizontal-slide-photo" data-slide-index="6" onclick="handleSlideClick(6)">
                 <a class="info-link" href="./films/companerosdepiso.html">
                     <img src="./images/companeros_de_piso/3.jpg" alt="Compañeros de Piso">
                    
@@ -189,7 +189,7 @@
                 </div>
                 
             </div>
-            <div class="horizontal-slide horizontal-slide-photo">
+            <div class="horizontal-slide horizontal-slide-photo" data-slide-index="7" onclick="handleSlideClick(7)">
                 <a class="info-link" href="./films/dontgo.html">
                     <img src="./images/dont_go/5.jpg" alt="Don't Go">
                    
@@ -213,7 +213,7 @@
                     </div>
                 </div>               
             </div>
-            <div class="horizontal-slide horizontal-slide-photo">
+            <div class="horizontal-slide horizontal-slide-photo" data-slide-index="8" onclick="handleSlideClick(8)">
                 <a class="info-link" href="./films/ordinarypeople.html">
                     <img src="./images/ordinary_people/6.jpg" alt="Ordinary People">
                    
@@ -238,7 +238,7 @@
                     </div>
                 </div>               
             </div>
-            <div class="horizontal-slide horizontal-slide-photo">
+            <div class="horizontal-slide horizontal-slide-photo" data-slide-index="9" onclick="handleSlideClick(9)">
                 <a class="info-link" href="./films/eineinfachesereighnis.html">
                     <img src="./images/ein_einfaches_ereignis/4.jpg" alt="Ein Einfaches Ereignis">
                    
@@ -263,7 +263,7 @@
                     </div>
                 </div>               
             </div>
-            <div class="horizontal-slide horizontal-slide-photo">
+            <div class="horizontal-slide horizontal-slide-photo" data-slide-index="10" onclick="handleSlideClick(10)">
                 <a class="info-link" href="./films/teahouse.html">
                     <img src="./images/ArchDoc/5.jpg" alt="Tea House - Terunobu Fujimori | Kingston University & The Barbican">
                    
@@ -365,6 +365,34 @@
                 }
             });
         });
+
+        /* function handleSlideClick(slideIndex) {
+        localStorage.setItem('selectedSlideIndex', slideIndex);
+       }
+
+    $(document).ready(function () {
+        const selectedSlideIndex = localStorage.getItem('selectedSlideIndex');
+
+        if (selectedSlideIndex !== null) {
+            const scrollContent = $("#horizontal-wrapper-index .scroll-content");
+            const previousSlide = $(`.horizontal-slide[data-slide-index="${selectedSlideIndex-1}"]`);
+            const selectedSlide = $(`.horizontal-slide[data-slide-index="${selectedSlideIndex}"]`);
+            const nextSlide = $(`.horizontal-slide[data-slide-index="${selectedSlideIndex+1}"]`);
+            if (scrollContent.length > 0 && selectedSlide.length > 0) {
+                var total = 10;
+                var screenWidth =  window.innerWidth;
+                var imagesPerScreen = screenWidth/total;
+                var imageWidth = selectedSlide.width();
+                const translateXValue = -selectedSlide.position().left;
+                scrollContent.css('transform', "translate3d(0px, "+translateXValue+"px, 0px)");
+                selectedSlide.css('opacity', '1');
+                previousSlide.css('opacity', '1');
+                nextSlide.css('opacity', '1');
+            }
+
+            localStorage.removeItem('selectedSlideIndex');
+        }
+    }); */
     </script> 
 </body>
 </html>
