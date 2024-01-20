@@ -945,6 +945,21 @@ a:not([href]),a:not([href]):hover {
     text-decoration: none
 }
 
+.a-no-style{
+    color: transparent !important;
+    background-color: transparent !important;
+}
+
+.a-no-style:hover {
+    color: transparent !important;
+    text-decoration: none !important;
+}
+
+.a-no-style:not([href]),a .a-no-style:not([href]):hover {
+    color: transparent !important;
+    text-decoration: none
+}
+
 pre {
     font-family: SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;
     font-size: 1em;
