@@ -3610,7 +3610,7 @@ hr {
 
 @media (min-width: 1200px) and (max-width: 1799px){
     .slider-logo-fest-tokyo{
-        
+       padding-top: 12%; 
        width: 20%;
     }
 }
