@@ -3408,7 +3408,7 @@ hr {
 }
 @media (min-width: 1800px) {
     .slider-logo-fest-tokyo{
-        
+       padding-top: 10%;
        width: 18%;
     }
 }
@@ -4040,6 +4040,7 @@ hr {
 
 @media (min-width: 450px) and (max-width: 932px){
     .slider-logo-fest-tokyo{
+       padding-top: 1%;
        width: 13%;
     }
 }
@@ -4237,6 +4238,7 @@ hr {
 
 @media (max-width: 450px) {
     .slider-logo-fest-tokyo{
+      padding-top: 1%;
        width: 21%;
     }
 }
