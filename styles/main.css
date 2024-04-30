@@ -2926,6 +2926,17 @@ hr {
     margin-left: auto;
 }
 
+.slider-3 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    animation: 15s sliding-3 linear infinite;
+}
+
 .slider-7 {
     position: relative;
     width: 100%;
@@ -2980,6 +2991,31 @@ hr {
     object-fit: cover; 
     object-position: center 50%;
 }
+
+@keyframes sliding-3 {
+    0% {
+        transform: translateX(0%);
+    }
+    25% {
+        transform: translateX(0%);
+    }
+    33.33% {
+        transform: translateX(-100%);
+    }
+    58.33% {
+        transform: translateX(-100%);
+    }
+    66.66% {
+        transform: translateX(-200%);
+    }
+    91.66% {
+        transform: translateX(-200%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
 
 @keyframes sliding-7 {
     0% {
