@@ -2937,6 +2937,17 @@ hr {
     animation: 15s sliding-3 linear infinite;
 }
 
+.slider-4 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    animation: 20s sliding-4 linear infinite;
+}
+
 .slider-7 {
     position: relative;
     width: 100%;
@@ -3010,6 +3021,36 @@ hr {
     }
     91.66% {
         transform: translateX(-200%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes sliding-4 {
+    0% {
+        transform: translateX(0%);
+    }
+    12.5% {
+        transform: translateX(0%);
+    }
+    25% {
+        transform: translateX(-100%);
+    }
+    37.5% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(-200%);
+    }
+    62.5% {
+        transform: translateX(-200%);
+    }
+    75% {
+        transform: translateX(-300%);
+    }
+    87.5% {
+        transform: translateX(-300%);
     }
     100% {
         transform: translateX(0%);
